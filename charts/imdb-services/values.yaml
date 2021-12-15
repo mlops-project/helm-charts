@@ -9,7 +9,7 @@ image:
     repository: mariadb
     tag: latest
 
-nameOverride: "api"
+nameOverride: "imdb-services"
 
 serviceAccount:
   create: false
