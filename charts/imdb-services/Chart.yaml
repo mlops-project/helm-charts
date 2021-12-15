@@ -8,4 +8,4 @@ maintainers:
 name: imdb-services
 sources:
   - https://github.com/helm/helm
-version: 2.0.5
+version: 2.0.6
