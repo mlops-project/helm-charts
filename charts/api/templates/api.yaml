@@ -10,6 +10,7 @@ spec:
     matchLabels:
       app.kubernetes.io/name: {{ include "example.name" . }}
       app.kubernetes.io/instance: {{ .Release.Name }}
+      app: api
   template:
     metadata:
       labels:
