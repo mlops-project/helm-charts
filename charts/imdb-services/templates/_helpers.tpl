@@ -55,15 +55,14 @@ Create the name of the service account to use
 {{- end -}}
 {{- end -}}
 
-{{/*
-Environment variables
-*/}}
-{{- define "helpers.list-env-variables"}}
+
+{{- define "helpers.list-env-variables" }}
+{{- $secretName := .Values.secret.name }}
 {{- range $key, $val := .Values.env.secret }}
 - name: {{ $key }}
   valueFrom:
     secretKeyRef:
-      name: app-env-secret
+      name: {{ $secretName }}
       key: {{ $key }}
-{{- end}}
+{{- end }}
 {{- end }}
