@@ -14,4 +14,3 @@ spec:
   selector:
     app.kubernetes.io/name: {{ include "example.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
-    mct-courses: api
