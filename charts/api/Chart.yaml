@@ -8,4 +8,4 @@ maintainers:
 name: api
 sources:
   - https://github.com/helm/helm
-version: 1.0.3
+version: 1.0.5
