@@ -3,6 +3,21 @@ entries:
   api:
   - apiVersion: v2
     appVersion: "1.0"
+    created: "2021-12-15T16:33:05.933723395Z"
+    description: A Helm chart for Kubernetes
+    digest: 57dd8fa1da442cd9852cd997ec6e68d7c35a87f4155cf256a51c871a62db9236
+    home: https://helm.sh/helm
+    maintainers:
+    - email: branco.bruyneel@student.howest.be
+      name: Branco Bruyneel
+    name: api
+    sources:
+    - https://github.com/helm/helm
+    urls:
+    - https://github.com/mlops-project/helm-charts/releases/download/api-2.0.0/api-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
+    appVersion: "1.0"
     created: "2021-12-15T15:42:02.910665715Z"
     description: A Helm chart for Kubernetes
     digest: 8a021f6f308d9f200f0280a63b6381ab655ef3b99f11ced481c4f1d804dfd19e
