@@ -36,6 +36,7 @@ env:
     MYSQL_USER: my_user
     MYSQL_ROOT_PASSWORD: my_root_password
     MYSQL_PASSWORD: my_password
+    AZURE_WEBSERVICE_URL: ""
 
 nodeSelector:
   kubernetes.io/hostname: bruyneel-branco
