@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: bruyneel-branco-imdb-db
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 2Gi
+  hostPath:
+    path: /mnt/data/imdb
+    type: ""
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - {}
+  persistentVolumeReclaimPolicy: Retain
+  volumeMode: Filesystem
