@@ -94,6 +94,21 @@ entries:
   imdb-services:
   - apiVersion: v2
     appVersion: "1.0"
+    created: "2021-12-16T19:43:44.462134053Z"
+    description: A Helm chart for Kubernetes
+    digest: e9f7afd7e299371127576d86a16192b00d3e0653eb48d63feed722da0f6ba1e5
+    home: https://helm.sh/helm
+    maintainers:
+    - email: branco.bruyneel@student.howest.be
+      name: Branco Bruyneel
+    name: imdb-services
+    sources:
+    - https://github.com/helm/helm
+    urls:
+    - https://github.com/mlops-project/helm-charts/releases/download/imdb-services-2.1.2/imdb-services-2.1.2.tgz
+    version: 2.1.2
+  - apiVersion: v2
+    appVersion: "1.0"
     created: "2021-12-16T19:30:59.070385913Z"
     description: A Helm chart for Kubernetes
     digest: fc7c0366ec830c236c38e2a02d46b33938511d22d32226c95a686789a6aa3229
