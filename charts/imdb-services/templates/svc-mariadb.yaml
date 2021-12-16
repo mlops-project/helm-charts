@@ -10,8 +10,6 @@ spec:
     - port: {{ .Values.service.mariadb.port }}
       targetPort: {{ .Values.service.mariadb.targetPort }}
       protocol: TCP
-      name: clusterIP
+      name: cluster-ip
   selector:
-    app.kubernetes.io/name: {{ include "example.name" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app: mariadb
+    workload.user.cattle.io/workloadselector: apps.deployment-bruyneel-branco-imdb-mariadb

@@ -10,8 +10,6 @@ spec:
     - port: {{ .Values.service.api.port }}
       targetPort: {{ .Values.service.api.targetPort }}
       protocol: TCP
-      name: clusterIP
+      name: cluster-ip
   selector:
-    app.kubernetes.io/name: {{ include "example.name" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app: api
+    workload.user.cattle.io/workloadselector: apps.deployment-bruyneel-branco-imdb-api

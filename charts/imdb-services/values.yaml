@@ -26,13 +26,13 @@ service:
     port: 3306
 
 secret:
-  name: app-env-var-secret
+  name: db-connection
+
 env:
-  normal:
-    MYSQL_PORT: 3306
-    MYSQL_HOST: mariadb
-    MYSQL_DATABASE: imdb
   secret:
+    MYSQL_PORT: "3306"
+    MYSQL_HOST: svc-mariadb
+    MYSQL_DATABASE: imdb
     MYSQL_USER: my_user
     MYSQL_ROOT_PASSWORD: my_root_password
     MYSQL_PASSWORD: my_password
