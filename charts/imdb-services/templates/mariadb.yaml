@@ -27,8 +27,6 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.mariadb.repository }}:{{ .Values.image.mariadb.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          env:
-          {{- include "helpers.list-env-variables" . | indent 6 }}
           ports:
             - name: db
               containerPort: 3306
