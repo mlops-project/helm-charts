@@ -6,13 +6,17 @@ spec:
   accessModes:
   - ReadWriteOnce
   capacity:
-    storage: 2Gi
+    storage: 1Gi
   hostPath:
     path: /mnt/data/imdb
-    type: ""
+    type: DirectoryOrCreate
   nodeAffinity:
     required:
       nodeSelectorTerms:
-      - {}
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - bruyneel-branco
   persistentVolumeReclaimPolicy: Retain
   volumeMode: Filesystem
