@@ -9,7 +9,7 @@ spec:
   ports:
     - port: {{ .Values.service.api.port }}
       targetPort: {{ .Values.service.api.targetPort }}
+      nodePort: {{ .Values.service.api.nodePort }}
       protocol: TCP
-      name: cluster-ip
   selector:
     workload.user.cattle.io/workloadselector: apps.deployment-bruyneel-branco-imdb-api
